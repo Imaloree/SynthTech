@@ -214,6 +214,22 @@ footer {
     h3 {
         font-size: 1.4em;
     }
+    .introduction {
+        flex-wrap: wrap;
+        overflow: auto;
+    }
+    .information {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        align-items: start;
+        justify-content: center;
+        gap: 0;
+    }
+    .boxes {
+        margin-bottom: 20px;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width:480px) {
@@ -231,9 +247,5 @@ footer {
     }
     nav {
         flex-wrap: wrap;
-    }
-    .introduction {
-        flex-wrap: wrap;
-        overflow: auto;
     }
 }
