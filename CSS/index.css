@@ -1,0 +1,168 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    nav {
+        top: 0;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #3A5060;
+        color: white;
+    }
+    ul {
+        list-style-type: none;
+        text-align: center;
+    }
+    ul li {
+        display: inline-block;
+        margin: 1em;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+    }
+    .logo label {
+        font-weight: bolder;
+    }
+    .logo img {
+        height: 50px;
+        width: 50px;
+    }
+    li img {
+        background-color: white;
+        border-radius: 50%;
+        width: 50px;
+    }
+    li a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+    li a:link {
+        color: white;
+    }
+    li a:visited {
+        color: white;
+    }
+    li a:hover {
+        color: #FFA800;
+    }
+    li a:active {
+        color: #FFA800;
+    }
+    li:nth-child(1) a {
+        color: #FFA800;
+    }
+
+
+    main {
+        height: 100%;
+    }
+
+    .web-name {
+        text-align: center;
+        font-size: 4rem;
+        text-shadow: 5px 5px rgba(255, 168, 0, 0.5);
+        padding: 2%;
+        width: 100%;
+        text-align: center;
+        color: #FFA800;
+    }
+
+    #index-bg {
+        height: 100%;
+    }
+    #index-bg img {
+        height: 100%;
+    }
+    .container img {
+        width: 100%;
+        height: auto;
+        z-index: 2;
+    }
+    
+    .container {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        height: 100%;
+        background-color: #1c2541;
+    }
+
+    .portrait-container {
+        position: absolute;
+        bottom: -20px; 
+        right: 0;
+        width: 30%;
+        height: 50%;
+        background-color: transparent; 
+        color: #fff; 
+        border-radius: 5px;
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+
+    .portrait-container img {
+        border-radius: 10px;
+        height: 100%;
+    }
+    .section-label {
+        color: ffffff;
+        position: absolute;
+        bottom: 0px; 
+        right: 10px; 
+    }
+    
+    .Programmers img{
+        z-index: 5;
+        position: absolute;
+        height: 35%;
+        width: 65%;
+        position: absolute;
+        bottom: 10%;
+        left: 15%;
+    }
+    footer {
+        position: relative;
+        bottom: 0;
+        color: #FFA800;
+        text-align: center;
+        width: 100%;
+        background-color: #3A5060;
+        padding: 2px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            justify-items: center;
+            min-height: 100vh;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .web-name {
+            font-size: 2rem;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        body {
+            min-width: 100vw;
+        }
+    }

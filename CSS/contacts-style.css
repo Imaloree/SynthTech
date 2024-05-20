@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #1C2541;
+}
+  
+/* Nav - main */
+nav {
+    top: 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3A5060;
+    color: white;
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+ul li {
+    display: inline-block;
+    margin: 1em;
+    text-align: center;
+    vertical-align: middle;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.logo label {
+    font-weight: bolder;
+}
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+li img {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+}
+li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+li a:link {
+    color: white;
+}
+li a:visited {
+    color: white;
+}
+li a:hover {
+    color: #FFA800;
+}
+li a:active {
+    color: #FFA800;
+}
+li:nth-child(5) a {
+    color: #FFA800;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+#page-title{
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 5px 5px rgba(255, 168, 0, 0.5);
+    padding: 2%;
+    width: 100%;
+    text-align: center;
+    color: #FFA800;
+}
+figure {
+    margin: 2em;
+}
+#fig1{
+    display: flex;
+    color: white;
+    align-items: center;
+    text-align: left;
+}
+#figImg1 {
+    background-image: url(../images/Profile_bg/1x1-1.png);
+    background-size: cover;
+}
+#fig2{
+    display: flex;
+    color: white;
+    align-items: center;
+    text-align: left;
+}
+#figImg2 {
+    background-image: url(../images/Profile_bg/1x1-2.png);
+    background-size: cover;
+}
+#fig3{
+    display: flex;
+    color: white;
+    align-items: center;
+    text-align: left;
+}
+#figImg3 {
+    background-image: url(../images/Profile_bg/1x1-3.png);
+    background-size: cover;
+}
+#fig4{
+    display: flex;
+    color: white;
+    align-items: center;
+    text-align: left;
+}
+#figImg4 {
+    background-image: url(../images/Profile_bg/1x1-4.png);
+    background-size: cover;
+}
+#fig5{
+    display: flex;
+    color: white;
+    align-items: center;
+    text-align: left;
+}
+#figImg5 {
+    background-image: url(../images/Profile_bg/1x1-5.png);
+    background-size: cover;
+}
+.captions{
+    padding: 20px;
+}
+
+.name{
+    font-size: 4em;
+    font-weight: bolder;
+    text-shadow: 3px 3px gray;
+    padding-right: 200px;
+}
+
+.position{
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 3px 3px gray;
+}
+
+.subposition{
+    font-size: 2.5em;
+    color: #FF8A00;
+    text-shadow: 2px 2px #ca5902;
+    padding-bottom: 5px;
+}
+
+.email a{
+    font-size: 2em;
+    color: white;
+    text-shadow: 1px 1px gray;
+}
+
+.email a:hover{
+    font-size: 2em;
+    color: #88c4e2;
+    text-shadow: 1px 1px #7DA2B4;
+}
+
+.profile{
+    width: 20%;
+    border: 5px  white solid;
+    border-radius: 5px;
+}
+
+#bg-img{
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    color: #FFA800;
+    text-align: center;
+    width: 100%;
+    background-color: #3A5060;
+    padding: 2px;
+}
+
+/* smaller screens, laptops */
+@media only screen and (max-width: 1024px){
+    main {
+        padding: 1em;
+    }
+    #page-title{
+        font-size: 3em;
+    }
+    .profile{
+        width: 20%;
+    }
+    
+    .captions{
+        padding: 10px;
+    }
+
+    .name{
+        font-size: 2.5em;
+        text-shadow: 2px 2px gray;
+        font-weight: bolder;
+        padding-right: 100px;
+    }
+
+    .position{
+        font-size: 2em;
+        font-weight: bold;
+        text-shadow: 3px 3px gray;
+    }
+    
+    .subposition{
+        font-size: 1.2em;
+        color: #FF8A00;
+        text-shadow: 2px 2px #ca5902;
+        padding-bottom: 2px;
+    }
+    
+    .email a{
+        font-size: 1.2em;
+        color: white;
+        text-shadow: 1px 1px gray;
+    }
+    
+    .email a:hover{
+        font-size: 1.2em;
+        color: #88c4e2;
+        text-shadow: 1px 1px #7DA2B4;
+    }
+}
+
+/* desktops, large screens */
+@media only screen and (max-width: 480px){
+    body {
+        min-width: 100vw;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #page-title{
+        font-size: 2em;
+    }
+    .profile{
+        width: 20%;
+        min-width: 100px;
+    }
+        
+    .captions{
+        padding: 10px;
+    }
+
+    .name{
+        font-size: 2em;
+        text-shadow: 2px 2px gray;
+        font-weight: bolder;
+        padding-right: 50px;
+    }
+
+    .position{
+        font-size: 1.5em;
+        font-weight: bold;
+        text-shadow: 3px 3px gray;
+    }
+    
+    .subposition{
+        font-size: 0.8em;
+        color: #FF8A00;
+        text-shadow: 2px 2px #ca5902;
+        padding-bottom: 2px;
+    }
+    
+    .email a{
+        font-size: 0.8em;
+        color: white;
+        text-shadow: 1px 1px gray;
+    }
+    
+    .email a:hover{
+        font-size: 0.8em;
+        color: #88c4e2;
+        text-shadow: 1px 1px #7DA2B4;
+    }
+}
